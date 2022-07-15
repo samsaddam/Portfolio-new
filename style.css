@@ -1,0 +1,141 @@
+body{
+    
+    font-family: 'Roboto';
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav .navbar{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.nav  .navbar a{
+    color: #00ABAE;
+}
+.nav .black{
+    color: black;
+}
+.nav .rightnav{
+    width: 50%;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4%;
+   
+}
+#about{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+#about .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about .text .button{
+    display: flex;
+    gap: 3%;
+}
+#about .text .button button{
+    background-color: #00ABAE;
+    width: 30%;
+    border: 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+.button button a{
+    color: white;
+}
+#about .img img{
+    border-radius: 50%;
+    width: 80%;
+    border: 20px solid #00ABAE;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+}
+.main .web h2{
+    color: #575757;
+}
+.main .web p{
+    color: #575757;
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    padding: 10px 0 20px 0;
+}
+
+#projects .project-info{
+    display: flex;
+    gap: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+}
+#projects .project-info .project-details{
+    width: 50%;
+}
+#projects .project-info .img{
+    width: 50%;
+}
+#projects .project-info .img img{
+    width: 100%;
+    border-radius: 20px;
+   
+}
+#projects .project-info .button button{
+    background-color: #00ABAE;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+footer{
+    text-align: center;
+}
+footer .icons img{
+    width: 50px;
+}
+
+/* ***************************
+Media Screen
+************************ */
+@media (max-width:500px){
+    #about{
+        font-size: 12px;
+        flex-direction: column-reverse;
+    }
+
+    .skills{
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+    }
+    .main{
+        grid-template-columns: auto;
+        gap: 0%;
+    }
+    #projects .project-info{
+        flex-direction: column;
+        gap: 2%;
+    }
+    #projects .project-info .project-details{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    #projects .project-info .img{
+        width: 100%;
+    }
+}
