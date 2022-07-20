@@ -116,6 +116,7 @@ Media Screen
     #about{
         font-size: 12px;
         flex-direction: column-reverse;
+        text-align: center;
     }
 
     .skills{
