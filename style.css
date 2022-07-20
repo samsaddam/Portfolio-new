@@ -57,6 +57,9 @@ a{
 .button button a{
     color: white;
 }
+/* #about .img{
+    width: 50%;
+} */
 #about .img img{
     border-radius: 50%;
     width: 80%;
@@ -65,7 +68,8 @@ a{
 .main{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 5%;
+    gap: 3%;
+    padding: 2%;
 }
 .main .web h2{
     color: #575757;
@@ -78,7 +82,9 @@ a{
     grid-template-columns: repeat(9,1fr);
     padding: 10px 0 20px 0;
 }
-
+#projects{
+    padding: 2%;
+}
 #projects .project-info{
     display: flex;
     gap: 5%;
@@ -112,6 +118,14 @@ footer .icons img{
 /* ***************************
 Media Screen
 ************************ */
+@media (max-width:900px){
+    
+    .skills{
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+    }
+}
 @media (max-width:500px){
     #about{
         font-size: 12px;
@@ -139,4 +153,27 @@ Media Screen
     #projects .project-info .img{
         width: 100%;
     }
+    footer h1{
+        font-size: larger;
+    }
 }
+@media (max-width:280px){
+    .nav .navbar{
+        font-size: 25px;
+    }
+    .nav .rightnav{
+        font-size: 13px;
+    }
+    #about .text{
+        font-size: 10px;
+    }
+    #about .text .button button{
+        padding: 5px;
+    }
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        place-items: center;
+    }
+}
+
